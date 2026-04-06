@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login-page" class="card">
+    <h2>Login to Continue 🎂</h2>
+    <input type="text" id="username" placeholder="Enter Name">
+    <input type="password" id="password" placeholder="Enter Password">
+    <input type="date" id="dob">
+    <button onclick="validateLogin()">Login</button>
+    <p id="error"></p>
+</div>
+
+<!-- INTRO -->
+<div id="intro-screen" class="hidden">
+    <h1>Ek Surprise Hai...</h1>
+    <button id="start-btn">Open 🎁</button>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content" class="hidden">
+    <div class="photo-frame">
+        <img src="c:\Users\DELL\Downloads\WhatsApp Image 2026-04-06 at 9.42.52 AM.jpeg">
+    </div>
+    <h1>HAPPY BIRTHDAY 🎉</h1>
+    <button id="gift-btn">🎁 Show Gift</button>
+</div>
+
+<!-- GIFT MESSAGE -->
+<div id="gift-box" class="hidden">
+    <h2>🎉 Special Message 🎉</h2>
+    <p>
+        Happy Birthday Bhaiya 🎉
+
+Aap sirf mere bade bhai nahi, balki mere guide, support system aur best friend bhi ho. Aapne hamesha mujhe sahi raasta dikhaya hai aur har mushkil me mera saath diya hai.
+
+Bhagwan aapko hamesha khush rakhe, sehatmand rakhe aur aapke saare sapne poore kare. Aapki life me hamesha success aur happiness bani rahe.
+
+Thank you for everything Bhaiya ❤️
+Enjoy your special day! 🎂✨
+Apka smile sabse special hai 😊<br>
+        Har din apke liye khushiyon se bhara ho 💖<br>
+        Aap jahan bhi raho, hamesha shine karte raho ✨<br>
+        Happy Birthday once again! 🎂❤️
+    </p>
+</div>
+
+<audio id="bg-music" loop>
+<source src="https://www.bensound.com/bensound-music/bensound-happybirthday.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
